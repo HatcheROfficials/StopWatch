@@ -1,0 +1,87 @@
+html, body {
+    margin: 0px;
+}
+  
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+  
+body {
+    overflow: hidden;
+    height: inherit;
+}
+
+.testBorder{
+    border: 2px solid black none;
+}
+
+/* Parent container */
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Clock - Start/Stop Button + Timer */
+#clock{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+/* Clock text alignment and margin */
+.textAlign{
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Start/Stop Button */
+.startStopButton{
+    height: 10vw;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-image: radial-gradient(#FEFBF6,#A6D1E6);
+    border: 2px solid #7F5283;
+}
+.startStopButton:hover{
+    background-image: radial-gradient(white,#7F5283);
+}
+/* Central timer */
+.timer{
+    height: 30vw;
+    aspect-ratio: 1/1;
+    border-radius: 25%;
+    background-image: radial-gradient(#FEFBF6,#A6D1E6);
+    border: 2px solid #7F5283;
+}
+
+.buttonText{
+    font-size: 3vw;
+}
+.clockText{
+    font-size: 7vw;
+}
+.functionSelectionBtn{
+    padding: 1vw;
+    margin: 1vw;
+    font-size: 3vw;
+    background-color: #FEFBF6;
+    border: 2px solid #7F5283;
+    border-radius: 1vw;
+}
+
+/* Function Selection Buttons*/
+#selectionBtnContainer{
+    display: flex;
+}
+.functionSelectionBtn{
+    text-align: center;
+    width: 20vw;
+}
+strong{
+    font-size: 5vw;
+}

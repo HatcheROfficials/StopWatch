@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/CSS" href="../StopWatch/style.css"/>
+        <title> StopWatch </title>
+    </head>
+    <body>
+        <!-- Parent Container -->
+        <section id="container" class="testBorder">
+
+            <!-- Clock Container -->
+            <div id="clock" class="testBorder">
+
+                <!-- Start Button -->
+                <div id="startBtn" class="testBorder startStopButton textAlign buttonText">Start</div>
+
+                <!-- Central Timer -->
+                <div id="timer" class="testBorder timer textAlign">
+                    <span id="hour" class="testBorder clockText">00</span>
+                    <strong>:</strong>
+                    <span id="min" class="testBorder clockText">00</span>
+                    <strong>:</strong>
+                    <span id="sec" class="testBorder clockText">00</span>
+                </div>
+                <!-- Stop Button -->
+                <div id="stopBtn" class="testBorder startStopButton textAlign buttonText">Stop</div>
+                <div id="resetBtn" class="testBorder startStopButton textAlign buttonText">Reset</div>
+
+            </div>
+
+            <!-- Selection Buttons (stopwatch/timer) -->
+            <div id="selectionBtnContainer">
+                <!-- <div id="timerSelectionBtn" class="functionSelectionBtn">Timer</div> -->
+                <div id="StopwatchSelectionBtn" class="functionSelectionBtn">StopWatch</div>
+            </div>
+            
+        </section>
+        <script type="text/javascript" src="../StopWatch/main.js"></script>
+    </body>
+</html>
