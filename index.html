@@ -3,7 +3,7 @@
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/CSS" href="../StopWatch/style.css"/>
+        <link rel="stylesheet" type="text/CSS" href="style.css"/>
         <title> StopWatch </title>
     </head>
     <body>
@@ -17,13 +17,18 @@
                 <div id="startBtn" class="testBorder startStopButton textAlign buttonText">Start</div>
 
                 <!-- Central Timer -->
-                <div id="timer" class="testBorder timer textAlign">
-                    <span id="hour" class="testBorder clockText">00</span>
-                    <strong>:</strong>
-                    <span id="min" class="testBorder clockText">00</span>
-                    <strong>:</strong>
-                    <span id="sec" class="testBorder clockText">00</span>
+                <div id="timer" class="testBorder timer">
+                    <div class="testBorder textAlign">
+                        <span id="hour" class="testBorder clockText">00</span>
+                        <strong>:</strong>
+                        <span id="min" class="testBorder clockText">00</span>
+                        <strong>:</strong>
+                        <span id="sec" class="testBorder clockText">00</span>
+                    </div>
+                    
+                    <span id="milliSec" class="testBorder textAlign">0</span>
                 </div>
+
                 <!-- Stop Button -->
                 <div id="stopBtn" class="testBorder startStopButton textAlign buttonText">Stop</div>
                 <div id="resetBtn" class="testBorder startStopButton textAlign buttonText">Reset</div>
@@ -32,11 +37,11 @@
 
             <!-- Selection Buttons (stopwatch/timer) -->
             <div id="selectionBtnContainer">
-                <div id="timerSelectionBtn" class="functionSelectionBtn">Timer</div>
+                <!-- <div id="timerSelectionBtn" class="functionSelectionBtn">Timer</div> -->
                 <div id="StopwatchSelectionBtn" class="functionSelectionBtn">StopWatch</div>
             </div>
             
         </section>
-        <script type="text/javascript" src="../StopWatch/main.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
