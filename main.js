@@ -7,7 +7,7 @@ var stopBtn = document.getElementById("stopBtn");
 var resetBtn = document.getElementById("resetBtn");
 
 var h="00";
-var m="00";
+var m="00"; 
 var s="00";
 var stopStopWatchID;
 
