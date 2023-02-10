@@ -47,6 +47,7 @@ body {
     background-image: radial-gradient(#FEFBF6,#A6D1E6);
     border: 2px solid #7F5283;
 }
+/* Buttons on hover */
 .startStopButton:hover{
     background-image: radial-gradient(white,#7F5283);
 }
@@ -62,6 +63,7 @@ body {
     border: 2px solid #7F5283;
 }
 
+/* Button and Timer Text */
 .buttonText{
     font-size: 3vw;
 }
@@ -72,7 +74,11 @@ body {
 #milliSec{
     font-size: 3vw;
 }
-
+/* Colons inside timer */
+strong{
+    font-size: 5vw;
+}
+/* Function selector buttons */
 .functionSelectionBtn{
     padding: 1vw;
     margin: 1vw;
@@ -90,6 +96,8 @@ body {
     text-align: center;
     width: 20vw;
 }
-strong{
-    font-size: 5vw;
+
+/* inactive button */
+.inactive{
+    opacity: 30%;
 }
