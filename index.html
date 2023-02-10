@@ -12,7 +12,7 @@
 
             <!-- Clock Container -->
             <div id="clock" class="testBorder">
-
+ 
                 <!-- Start Button -->
                 <div id="startBtn" class="testBorder startStopButton textAlign buttonText">Start</div>
 
@@ -36,9 +36,64 @@
             </div>
 
             <!-- Selection Buttons (stopwatch/timer) -->
-            <div id="selectionBtnContainer">
-                <div id="timerSelectionBtn" class="functionSelectionBtn inactive">Timer</div>
-                <div id="StopwatchSelectionBtn" class="functionSelectionBtn">StopWatch</div>
+            <div id="selectionBtnContainer" class="testBorder">
+                <div id="timerSelectionBtn" class="testBorder functionSelectionBtn inactive">Timer</div>
+                <div id="StopwatchSelectionBtn" class="testBorder functionSelectionBtn">StopWatch</div>
+            </div>
+
+            <div id="timerInput" class="testBorder">
+                <form class="testBorder">
+                    <div>
+                        <p>Hours</p>
+                        <select name="formhour">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Minutes</p>
+                        <select name="formminute">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Seconds</p>
+                        <select name="formsecond">
+                            <option value="0">0</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                            <option value="40">40</option>
+                            <option value="45">45</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input id="timerValueBtn" type="button" value="Enter Value in Timer">
+                    </div>
+                </form>
             </div>
             
         </section>

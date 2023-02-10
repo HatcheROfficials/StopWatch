@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} 
 
 /* Clock - Start/Stop Button + Timer */
 #clock{
@@ -100,4 +100,23 @@ strong{
 /* inactive button */
 .inactive{
     opacity: 30%;
+}
+
+#timerInput form{
+    display: flex;
+    margin: 1vw;
+    padding: 1vw;
+}
+#timerInput div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3vw;
+    font-size: 2vw;
+}
+#timerValueBtn{
+    padding: 1vw;
+    font-size: 1.5vw;
+    background-color: #FEFBF6;
+    border-radius: 1vw;
 }
