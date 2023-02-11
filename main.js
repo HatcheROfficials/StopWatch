@@ -1,3 +1,23 @@
+var buttonAudio = document.getElementById("a_button");
+var tickingAudio = document.getElementById("a_ticking");
+var alarmAudio = document.getElementById("a_alarm");
+
+function playButtonAudio(){
+    buttonAudio.pause();
+    buttonAudio.currentTime = 0;
+    buttonAudio.play();
+}
+function playTickingAudio(){
+    tickingAudio.pause();
+    tickingAudio.currentTime = 0;
+    tickingAudio.play();
+}
+function playAlarm(){
+    alarmAudio.pause();
+    alarmAudio.currentTime = 0;
+    alarmAudio.play();
+}
+
 // Timer text address
 var hour = document.getElementById("hour");
 var min = document.getElementById("min");
@@ -28,6 +48,7 @@ var userInputTime = [];
 
 // user input is stored in array with hour,min and sec at index 0,1,2
 function timerUserInput() {
+    playButtonAudio();
     userInputTime[0] = hourInput.item(0).value;
     userInputTime[1] = minInput.item(0).value;
     userInputTime[2] = secInput.item(0).value;
@@ -62,6 +83,7 @@ var stopStopWatchID;
 
 // Function selection based on mode button click
 function modeFunction(event) {
+    playButtonAudio();
     if (event.target == timerMode) {
         modeFlag = 1;
 
@@ -85,7 +107,8 @@ function modeFunction(event) {
 
 
 // stop watch function
-function startStopWatch() {
+function startStopWatch() { 
+    playButtonAudio();
     // to protect in case start button is pressed multiple times
     startBtn.removeEventListener("click", startStopWatch);
 
@@ -94,11 +117,11 @@ function startStopWatch() {
 
     // interval function
     function stopWatchCounter() {
-
         // Stopwatch Logic
         if (modeFlag == 0) {
             mil++;
             if (mil == 10) {
+                playTickingAudio();
                 mil = 0;
                 s++;
                 if (s < 10) {
@@ -125,6 +148,7 @@ function startStopWatch() {
         else if (modeFlag == 1) {
             mil++;
             if (mil == 10) {
+                playTickingAudio();
                 mil = 0;
                 s--;
                 if (s < 10) {
@@ -134,7 +158,8 @@ function startStopWatch() {
             if (h == 0 && m == 0 && s == 0) {
                 sec.textContent = "00";
                 mill.textContent = "00";
-                alert("Times Up");
+                playAlarm();
+                // alert("Times Up");
                 stopStopWatch();
                 return;
             }
@@ -166,6 +191,7 @@ function startStopWatch() {
 
 // stop button function
 function stopStopWatch() {
+    playButtonAudio();
     // assign event listner when stop button is pressed as it was removed when start is pressed
     // to avoide problems in case start button is pressed multiple times
     startBtn.addEventListener("click", startStopWatch);
@@ -174,6 +200,7 @@ function stopStopWatch() {
 
 // reset button function
 function resetStopWatch() {
+    playButtonAudio();
     if (modeFlag == 0) {
         h = "00";
         m = "00";
